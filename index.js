@@ -1,7 +1,6 @@
-let reload = setTimeout(() => {
-  document.location.reload(true)
-},relaoad1)
+var url = window.location.href
+var parametrosDaUrl = url.split('?')[1]
 
-const relaoad1 = setInterval(() => {
- return document.location.reload(false)
-}, 500)
+if (!parametrosDaUrl) {
+  window.location = 'https://new-portfolio-seven-psi.vercel.app/'
+}
