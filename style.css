@@ -7,7 +7,7 @@ body {
 }
 
 .header-container {
-  background-color: #121212; 
+  background-color: #121212;
 }
 
 .introduction {
@@ -19,7 +19,6 @@ body {
   align-items: center;
   gap: 50px;
   position: relative;
- 
 }
 
 #img-port {
@@ -28,11 +27,11 @@ body {
 }
 
 .nav-port {
-  color: #3B8FDC;
+  color: #3b8fdc;
 }
 
 .nav-port:hover {
-  color: #4CDFFF;
+  color: #4cdfff;
   text-decoration: none;
 }
 
@@ -41,7 +40,7 @@ body {
 }
 
 .nav-item a:hover {
-  color: #4CDFFF;
+  color: #4cdfff;
 }
 
 .hr-line {
@@ -67,7 +66,7 @@ body {
   font-size: 64px;
   line-height: 77px;
   text-transform: uppercase;
-  color: #3B8FDC;
+  color: #3b8fdc;
 }
 
 .presentation-profession {
@@ -135,5 +134,15 @@ body {
 
 .btn-social-link a:hover,
 .btn-social-git a:hover {
-  color: #4CDFFF;
+  color: #4cdfff;
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    display: block;
+  }
+  .presentation-name {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
