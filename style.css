@@ -6,13 +6,17 @@ body {
   background-color: #0c0c0c !important;
 }
 
+.container {
+  margin-top: 3rem;
+}
+
 .header-container {
   background-color: #121212;
 }
 
 .introduction {
-  max-width: 1200px;
-  padding: 40px 20px;
+  max-width: 972px;
+  padding: 40px 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -138,11 +142,33 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin-top: 1rem;
+  }
   .introduction {
     display: block;
+    margin: 0 auto;
+  }
+  #img-port {
+    width: 200px;
+    margin: 5px 15px;
+  }
+  .presentation {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
   }
   .presentation-name {
-    font-size: 48px;
+    margin: 5px 15px;
+    font-size: 36px;
     line-height: 60px;
+  }
+  .presentation-profession {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
+  }
+  .btn-social {
+    margin: 15px;
   }
 }
