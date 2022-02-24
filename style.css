@@ -236,7 +236,6 @@ body {
 
 .professional-data {
   width: 100%;
-  height: 585px;
   background-color: #121212;
 }
 
@@ -357,7 +356,7 @@ body {
     margin: 0 auto;
   }
   #img-data {
-    width: 90%;
+    width: 250px;
     margin: 5px 15px;
   }
   .about-me {
@@ -371,11 +370,55 @@ body {
     line-height: 60px;
   }
   .biography {
+    width: 65%;
     font-size: 18px;
     line-height: 22px;
     margin: 5px 15px;
   }
   .btn-contact {
     margin: 15px;
+  }
+
+  .professional-data {
+    height: auto;
+  }
+
+  .professional-data-container {
+    display: block;
+    margin: 0 auto;
+  }
+  .experience {
+    margin: 15px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .experience-company {
+    margin: 5px 15px;
+  }
+  .professional-item {
+    display: block;
+    margin: 5px 15px;
+  }
+  .company-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
+  }
+  .company-name-description {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    display: flex;
+    margin: 0;
+    padding-left: 0 !important;
+  }
+  .img-data {
+    width: 150px;
+    height: auto;
   }
 }
