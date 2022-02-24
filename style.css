@@ -26,8 +26,7 @@ body {
 }
 
 #img-port {
-  width: 250px;
-  clip-path: polygon(15% 20%, 100% 0%, 85% 80%, 0% 100%);
+  width: 250px;  
 }
 
 .nav-port {
@@ -230,8 +229,7 @@ body {
 }
 
 #img-data {
-  width: 200px;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  width: 270px;
 }
 
 .professional-data {
