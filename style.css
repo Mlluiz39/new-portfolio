@@ -231,8 +231,90 @@ body {
 
 #img-data {
   width: 400px;
-
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.professional-data {
+  width: 100%;
+  height: 585px;
+  background-color: #121212;
+}
+
+.experience {
+  margin-top: 100px;
+  margin-left: 180px;
+  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.professional-data-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.professional-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.professional-item h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-style: normal;
+  color: #fff;
+  font-weight: 500;
+}
+
+.professional-item p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #fff;
+}
+
+.company-name {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 500;
+  color: #3b8fdc;
+}
+
+.company-name-description {
+  max-width: 700px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 300;
+  color: #c4c4c4;
+}
+
+.experience-company {
+  margin-left: 180px;
+  margin-bottom: 16px;
+}
+
+.experience-company h2 {
+  width: 193px;
+  height: 55px;
+  background-color: #151515;
+}
+
+.experience-company div h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  border-left: 2px solid #10d7e2;
 }
 
 @media (max-width: 768px) {
@@ -269,7 +351,6 @@ body {
   .personal-data-container {
     height: auto;
   }
-
   .personal-data {
     display: block;
     margin: 0 auto;
