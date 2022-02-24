@@ -265,4 +265,35 @@ body {
   .btn-social {
     margin: 15px;
   }
+
+  .personal-data-container {
+    height: auto;
+  }
+
+  .personal-data {
+    display: block;
+    margin: 0 auto;
+  }
+  #img-data {
+    width: 90%;
+    margin: 5px 15px;
+  }
+  .about-me {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
+  }
+  .address {
+    margin: 5px 15px;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .biography {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 15px;
+  }
+  .btn-contact {
+    margin: 15px;
+  }
 }
