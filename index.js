@@ -1,6 +1,5 @@
 let reload = setTimeout(() => {
-  document.location.reload()
-  return false
+  document.location.reload(true)
 }, 500)
 
 clearTimeout(reload)
