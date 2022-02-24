@@ -1,1 +1,1 @@
-document.location.reload(true);
+document.location.reload()
