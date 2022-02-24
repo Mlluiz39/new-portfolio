@@ -1,2 +1,6 @@
-document.location.reload()
-return false;
+let reload = setTimeout(() => {
+  document.location.reload()
+  return false
+}, 500)
+
+clearTimeout(reload)
