@@ -277,6 +277,7 @@ body {
 .professional-data-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  height: 585px;
 }
 
 .professional-item {
@@ -323,7 +324,7 @@ body {
 
 .experience-company h2 {
   width: 193px;
-  height: 55px;
+
   background-color: #151515;
 }
 
@@ -337,6 +338,108 @@ body {
   line-height: 22px;
   color: #ffffff;
   border-left: 2px solid #10d7e2;
+}
+
+.my-projects {
+  width: 100%;
+  background-color: #151515;
+  height: 1255px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-item1,
+.project-item3 {
+  margin-left: 140px;
+}
+
+.project-item-img {
+  width: 500px;
+  height: 200px;
+  background-color: #121212;
+}
+
+.project-item-description h4 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #fff;
+}
+
+.project-item-description p {
+  max-width: 450px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  font-weight: 300;
+  color: #c4c4c4;
+}
+
+.project-item-description span {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 500;
+  color: #3b8fdc;
+}
+
+.my-projects h3 {
+  padding-top: 100px;
+  margin-left: 140px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.project-btn-link {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  border-radius: 4px;
+  width: 140px;
+  height: 45px;
+  background-color: #121212;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
+  color: #fff;  
+}
+
+.project-btn-link a {
+  margin-left: 8px;
+  text-decoration: none !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.project-btn-link a:hover {
+  color: #3b8fdc;
+}
+
+.project-footer {
+  display: grid;
+ 
+ background-color: #121212;
+  
+}
+
+.project-footer-itens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+ 
 }
 
 @media (max-width: 768px) {
