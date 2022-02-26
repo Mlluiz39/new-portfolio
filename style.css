@@ -637,6 +637,18 @@ hr {
    
   }
 
+  .experience-company div {
+   margin-top: 10px;
+  }
+
+  .experience-company h2 {
+    padding: 10px;
+  }
+
+  .professional-data {
+    height: 450px;
+  }
+
   .professional-data .experience {
     margin-left: 15px;
   }
