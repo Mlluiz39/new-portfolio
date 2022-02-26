@@ -616,6 +616,10 @@ hr {
     display: flex;
     margin: 0;
   }
+
+  .navbar-container{
+    display: none;
+  }
   .img-data {
     width: 150px;
     height: auto;
