@@ -641,11 +641,11 @@ hr {
   }
     
   .projects {
-    margin-left: 10px;
+    margin: 0 10px;
   }
 
   .projects .project-item-img {
-    width: 600px;
+    width: 550px;
     height: 350px;
   }
 }
