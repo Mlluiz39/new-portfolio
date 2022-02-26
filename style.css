@@ -511,10 +511,12 @@ body {
 
   .professional-data-container {
     display: block;
-    margin: 0 auto;
+    margin-left: 85px;
+    margin-top: 40px;
   }
   .experience {
-    margin: 15px;
+    margin-top: 15px;
+    margin-left: 100px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -534,6 +536,30 @@ body {
     font-size: 18px;
     line-height: 22px;
     margin: 5px 15px;
+  }
+
+  .my-projects {
+   background-color: #151515;
+   height: 100vh;
+  }
+
+  .projects {
+    display:grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    
+  }
+
+  .my-projects h3 {
+    margin-left: 100px;
+  }
+
+  .projects .project-item1, .project-item3, .project-item2, .project-item4 {
+    margin: 0px 10px;
+  }
+
+  .projects .project-item-img {
+    width: 100%;
   }
 }
 
