@@ -615,10 +615,33 @@ hr {
   .container {
     display: flex;
     margin: 0;
-    padding-left: 0 !important;
   }
   .img-data {
     width: 150px;
     height: auto;
+  }
+
+  .professional-data .experience {
+    margin-left: 15px;
+  }
+
+  .professional-data-container {
+    display: block;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .my-projects h3 {
+    padding-top: 40px;
+    margin-left: 10px;
+  }
+    
+  .projects {
+    margin-left: 10px;
+  }
+
+  .projects .project-item-img {
+    width: 600px;
+    height: 350px;
   }
 }
