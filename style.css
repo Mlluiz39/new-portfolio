@@ -617,12 +617,24 @@ hr {
     margin: 0;
   }
 
+  .introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
   .navbar-container{
     display: none;
   }
   .img-data {
     width: 150px;
     height: auto;
+  }
+
+  .personal-data-container .biography {
+    width: 90%;
+    margin-top: 10px;
+   
   }
 
   .professional-data .experience {
@@ -634,16 +646,13 @@ hr {
     margin-left: 0px;
     margin-top: 40px;
   }
-
   .my-projects h3 {
     padding-top: 40px;
     margin-left: 10px;
-  }
-    
+  }  
   .projects {
     margin: 0 10px;
   }
-
   .projects .project-item-img {
     width: 550px;
     height: 350px;
