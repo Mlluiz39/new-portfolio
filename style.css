@@ -13,6 +13,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 3rem;
+  margin-bottom: 40px;
 }
 
 .header-container {
@@ -46,7 +47,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
-  
 }
 
 .navbar ul li {
@@ -171,7 +171,7 @@ hr {
   height: 45px;
   background-color: #121212;
   border: 2px solid;
- 
+
   border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
   color: #fff;
 }
@@ -244,7 +244,7 @@ hr {
 
 .biography {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
   line-height: 32px;
   font-weight: 300;
   color: #c4c4c4;
@@ -300,6 +300,7 @@ hr {
 
 #img-data {
   width: 270px;
+  margin-bottom: 60px;
 }
 
 .professional-data {
@@ -308,9 +309,9 @@ hr {
 }
 
 .experience {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-left: 160px;
-  margin-bottom: 26px;
+  margin-bottom: 60px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -322,7 +323,7 @@ hr {
 .professional-data-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 585px;
+  height: 385px;
 }
 
 .professional-item {
@@ -363,20 +364,21 @@ hr {
 }
 
 .experience-company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-left: 160px;
-  margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .experience-company h2 {
   width: 193px;
-
+  padding: 20px 0;
   background-color: #151515;
 }
 
 .experience-company div h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -388,7 +390,7 @@ hr {
 .my-projects {
   width: 100%;
   background-color: #151515;
-  height: 1255px;
+  height: auto;
 }
 
 .projects {
@@ -398,7 +400,8 @@ hr {
 }
 
 .project-item1,
-.project-item3 {
+.project-item3,
+.project-item5 {
   margin-left: 140px;
 }
 
@@ -472,16 +475,51 @@ hr {
   color: #3b8fdc;
 }
 
-.project-footer {
-  display: grid;
-
+.footer-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
   background-color: #121212;
 }
 
-.project-footer-itens {
+.project-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 650px;
+  height: 100px;
+}
+
+.project-footer-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: -160px;
+}
+
+.project-footer-title h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: #c4c4c4;
+}
+
+.project-footer-paragraph {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: -170px;
+  color: #c4c4c4;
+}
+
+.project-footer-paragraph-item span {
+  margin: 0 auto;
+}
+
+.project-footer-paragraph-item #img-code {
+  margin-bottom: -12px;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -583,7 +621,7 @@ hr {
   .my-projects {
     width: 100%;
     background-color: #151515;
-    height:auto;
+    height: auto;
     margin-bottom: 10px;
   }
 
@@ -594,7 +632,7 @@ hr {
   }
 
   .my-projects h3 {
-   padding-top: 15px;
+    padding-top: 15px;
     margin-left: 10px;
   }
 
@@ -614,31 +652,34 @@ hr {
 @media (max-width: 415px) {
   .container {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
+   
   }
 
   .introduction {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5px;
   }
 
-  .navbar-container{
+  .navbar-container {
     display: none;
   }
   .img-data {
     width: 150px;
     height: auto;
   }
+  .company-name-description {
+    max-width: 75%;
+  }
 
   .personal-data-container .biography {
-    width: 90%;
+    max-width: 90%;
     margin-top: 10px;
-   
   }
 
   .experience-company div {
-   margin-top: 10px;
+    margin-top: 10px;
   }
 
   .experience-company h2 {
@@ -646,7 +687,7 @@ hr {
   }
 
   .professional-data {
-    height: 450px;
+    height: 550px;
   }
 
   .professional-data .experience {
@@ -661,12 +702,33 @@ hr {
   .my-projects h3 {
     padding-top: 40px;
     margin-left: 25px;
-  }  
+  }
   .projects {
     margin: 0 10px;
   }
+
+  .projects .project-item1, .project-item3, .project-item5 {
+    margin: 0 auto;
+  }
+
   .projects .project-item-img {
-    width: 550px;
+    width: 450px;
     height: 350px;
+  }
+
+  .footer-container {
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121212;
+    align-items: center;
+  }
+
+  .project-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
   }
 }
