@@ -308,6 +308,14 @@ hr {
   background-color: #121212;
 }
 
+.professional-data ul {
+  list-style: none;
+}
+
+.professional-data ul li {
+  margin: 20px 0;
+}
+
 .experience {
   margin-top: 40px;
   margin-left: 160px;
@@ -321,9 +329,21 @@ hr {
 }
 
 .professional-data-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 385px;
+  display: flex;
+ 
+}
+
+.experience-data-value {
+ 
+}
+
+.embra-data-active {
+  display: block;
+}
+
+.experience-data-value .professional {
+  margin-bottom: 40px;
+  margin-left: 15px;
 }
 
 .professional-item {
@@ -384,6 +404,9 @@ hr {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.border-color-blue {
   border-left: 2px solid #10d7e2;
 }
 
@@ -657,7 +680,6 @@ hr {
   .container {
     display: flex;
     margin: 0 auto;
-   
   }
 
   .introduction {
@@ -718,10 +740,10 @@ hr {
     height: 350px;
   }
 
-  .projects .project-item5, .projects .project-item6{
+  .projects .project-item5,
+  .projects .project-item6 {
     max-width: 95%;
     margin: 0 auto;
-    
   }
 
   .project-item-img {
