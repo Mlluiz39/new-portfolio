@@ -655,7 +655,7 @@ section div:hover ~ .mobi-data {
     margin: 5px 15px;
   }
   .experience-company section div {
-   transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
   }
   .professional-item {
     display: block;
@@ -693,17 +693,37 @@ section div:hover ~ .mobi-data {
   .projects .project-item1,
   .project-item3,
   .project-item2,
-  .project-item4 {
+  .project-item4,
+  .project-item5 {
     margin: 0px 10px;
   }
 
   .projects .project-item-img {
-    width: 100%;
+    width: 60%;
+   margin-left: 15px;
     margin-bottom: -20px;
   }
+  .project-item-description h4, p, span {
+   margin-left: 15px;
+  }
+  .project-btn-link {
+    margin-left: 15px;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+  
 }
 
 @media (max-width: 415px) {
+ 
   .container {
     display: flex;
     margin: 0 auto;
@@ -723,7 +743,9 @@ section div:hover ~ .mobi-data {
     height: auto;
   }
   .company-name-description {
-    max-width: 75%;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
   }
 
   .personal-data-container .biography {
@@ -743,6 +765,10 @@ section div:hover ~ .mobi-data {
     height: auto;
     padding-bottom: 15px;
   }
+  .professional-item {
+    margin: 0;
+    padding: 0;
+  }
 
   .professional-data .experience {
     margin-left: 15px;
@@ -758,17 +784,24 @@ section div:hover ~ .mobi-data {
     padding-top: 40px;
     margin-left: 25px;
   }
-  .experience-company section div {
-    transform: translate(0) scale(1);
-   }
+  .experience-company section {
+    display: block;
+   
+  }
+  .experience-company .embra-data,
+  .money-data,
+  .mobi-data {
+    margin-left: -1px;
+  }
 
   .projects {
     margin: auto;
   }
 
   .projects .project-item-img {
-    margin: 0 auto;
-    height: 350px;
+    width: 70%;
+    height: 250px;
+    margin: 0 5px;
   }
 
   .projects .project-item5,
@@ -778,15 +811,18 @@ section div:hover ~ .mobi-data {
   }
 
   .project-item-img {
+    max-width: 90%;
     margin: 0 auto;
   }
-
+  .project-item-description {
+    max-width: 80%;
+  }
+  
   .footer-container {
     display: flex;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
     background-color: #121212;
-    align-items: center;
   }
 
   .project-footer {
