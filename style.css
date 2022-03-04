@@ -330,20 +330,44 @@ hr {
 
 .professional-data-container {
   display: flex;
- 
+  flex-direction: row;
 }
 
-.experience-data-value {
- 
+.experience-company section {
+  display: flex;
 }
 
-.embra-data-active {
-  display: block;
+.embra-data,
+.money-data,
+.mobi-data {
+  margin: 0 20px;
+  margin-bottom: 15px;
 }
 
-.experience-data-value .professional {
-  margin-bottom: 40px;
-  margin-left: 15px;
+.embra-data,
+.money-data,
+.mobi-data {
+  transform: translateX(-80%) scale(0);
+  transition: 1.5s;
+}
+
+section div:hover ~ .embra-data {
+  transform: translateX(0) scale(1);
+  transition: 2s;
+}
+
+section div:hover ~ .money-data {
+  transform: translateX(0) scale(1);
+  transition: 2s;
+}
+
+section div:hover ~ .mobi-data {
+  transform: translateX(0) scale(1);
+  transition: 2s;
+}
+
+.transform-active {
+  transform: translateX(0) scale(1);
 }
 
 .professional-item {
@@ -630,6 +654,9 @@ hr {
   .experience-company {
     margin: 5px 15px;
   }
+  .experience-company section div {
+   transform: translate(0) scale(1);
+  }
   .professional-item {
     display: block;
     margin: 5px 15px;
@@ -731,6 +758,10 @@ hr {
     padding-top: 40px;
     margin-left: 25px;
   }
+  .experience-company section div {
+    transform: translate(0) scale(1);
+   }
+
   .projects {
     margin: auto;
   }
