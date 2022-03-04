@@ -700,11 +700,13 @@ section div:hover ~ .mobi-data {
 
   .projects .project-item-img {
     width: 60%;
-   margin-left: 15px;
+    margin-left: 15px;
     margin-bottom: -20px;
   }
-  .project-item-description h4, p, span {
-   margin-left: 15px;
+  .project-item-description h4,
+  p,
+  span {
+    margin-left: 15px;
   }
   .project-btn-link {
     margin-left: 15px;
@@ -719,11 +721,11 @@ section div:hover ~ .mobi-data {
     align-items: center;
     gap: 80px;
   }
-  
 }
 
 @media (max-width: 415px) {
- 
+  
+
   .container {
     display: flex;
     margin: 0 auto;
@@ -786,7 +788,6 @@ section div:hover ~ .mobi-data {
   }
   .experience-company section {
     display: block;
-   
   }
   .experience-company .embra-data,
   .money-data,
@@ -817,7 +818,7 @@ section div:hover ~ .mobi-data {
   .project-item-description {
     max-width: 80%;
   }
-  
+
   .footer-container {
     display: flex;
     margin: 0 auto;
