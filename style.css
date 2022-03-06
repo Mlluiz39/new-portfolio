@@ -16,7 +16,7 @@ body {
   margin-bottom: 40px;
 }
 
-.header-container {
+.main-container {
   background-color: #121212;
 }
 
@@ -725,7 +725,6 @@ section div:hover ~ .mobi-data {
 
 @media (max-width: 415px) {
   
-
   .container {
     display: flex;
     margin: 0 auto;
