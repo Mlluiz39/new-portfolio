@@ -1,6 +1,6 @@
 const embrasilValue = document.querySelector('.embrasil-value')
 const moneyValue = document.querySelector('.money-value')
-const mobilegalValue = document.querySelector('.mobilegal-value')
+const mobiValue = document.querySelector('.mobilegal-value')
 
 const moneyFunction = () => {
   const money = document.querySelector('.money-data')
@@ -25,4 +25,4 @@ const mobiFunction = () => {
 
 moneyValue.addEventListener('click', moneyFunction)
 embrasilValue.addEventListener('click', embraFunction)
-mobilegalValue.addEventListener('click', mobiFunction)
+mobiValue.addEventListener('click', mobiFunction)
