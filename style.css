@@ -5,6 +5,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0c0c0c !important;
 }
@@ -724,7 +728,6 @@ section div:hover ~ .mobi-data {
 }
 
 @media (max-width: 415px) {
-  
   .container {
     display: flex;
     margin: 0 auto;
