@@ -812,7 +812,7 @@ section div:hover ~ .mobi-data {
     height: 60px;
     position: fixed;
     top:20px;
-    right: 30px;
+    right: 19px;
     cursor: pointer;
     box-shadow: 0 0 0 0 #2f2e2e, 0 0 0 0 #2f2e2e;
     transition: box-shadow 1s ease-in-out;
