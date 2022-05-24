@@ -758,10 +758,6 @@ section div:hover ~ .mobi-data {
 }
 
 @media (max-width: 415px) {
-  .navbar-container {
-    display: none;
-  }
-
   .menu {
     background-color: #2f2e2e;
     border-radius: 50%;
@@ -779,20 +775,24 @@ section div:hover ~ .mobi-data {
     box-shadow: 0 0 0 8px #2f2e2e, 0 0 0 8px #2f2e2e;
   }
 
-  .button-menu {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    padding-right: 10px;
-    margin-top: -20px;
+  #home .open-menu,
+  .close-menu {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .open-menu {
     opacity: 1;
     visibility: visible;
     position: fixed;
+    top: 15px;
+    right: 15px;
+
     background-color: #2f2e2e;
     border: none;
+    border-radius: 10px;
+
+    z-index: 1;
   }
 
   .close-menu {
@@ -802,13 +802,16 @@ section div:hover ~ .mobi-data {
     top: 15px;
     right: 15px;
     background-color: #2f2e2e;
-   
+
     border: none;
-    z-index: 200;
   }
 
   .close-menu path {
     stroke: #fff;
+  }
+
+  .navbar {
+    margin: 0;
   }
 
   .nav-port {
@@ -819,9 +822,7 @@ section div:hover ~ .mobi-data {
   .navbar-container {
     display: flex;
     flex-direction: column;
-  }
 
-  .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -830,20 +831,20 @@ section div:hover ~ .mobi-data {
     width: 100vw;
     height: 100vh;
 
-    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
-  .navbar ul {
+  .navbar-container ul {
     display: flex;
     flex-direction: column;
     gap: 60px;
-
-    margin-block: 100px;
+    margin-bottom: 200px;
   }
 
-  .navbar ul li a {
+  .navbar-container .navbar ul li a {
     font-size: 30px;
-    
   }
 
   input {

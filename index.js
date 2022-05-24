@@ -2,6 +2,21 @@ const embrasilValue = document.querySelector('.embrasil-value')
 const moneyValue = document.querySelector('.money-value')
 const mobiValue = document.querySelector('.mobilegal-value')
 
+const openMenu = document.querySelector('[data-js="open-navigation"]')
+const closeMenu = document.querySelector('[data-js="close-navigation"]')
+
+const menu = document.querySelector('.navbar-container')
+
+openMenu.addEventListener('click', () => {
+  document
+    .querySelector('header')
+    .classList.add('.navbar-container')
+})
+closeMenu.addEventListener('click', () => {
+  menu.classList.remove('.navbar-container')
+ 
+})
+
 const moneyFunction = () => {
   const money = document.querySelector('.money-data')
   const borderColor = document.querySelector('.money-value h2')
