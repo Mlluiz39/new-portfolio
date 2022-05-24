@@ -5,15 +5,15 @@ const mobiValue = document.querySelector('.mobilegal-value')
 const openMenu = document.querySelector('[data-js="open-navigation"]')
 const closeMenu = document.querySelector('[data-js="close-navigation"]')
 
-const menu = document.querySelector('.navbar-container')
-
 openMenu.addEventListener('click', () => {
   document
-    .querySelector('header')
-    .classList.add('.navbar-container')
+    .querySelector('nav')
+    .classList.add('transform-active')
 })
 closeMenu.addEventListener('click', () => {
-  menu.classList.remove('.navbar-container')
+  document
+    .querySelector('nav')
+    .classList.remove('.navbar-container')
  
 })
 

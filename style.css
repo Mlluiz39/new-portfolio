@@ -591,23 +591,6 @@ section div:hover ~ .mobi-data {
     display: none;
   }
 
-  input:checked ~ label .menu {
-    box-shadow: 0 0 0 130vw #2f2e2e, 0 0 0 130vh #2f2e2e;
-  }
-
-  input:checked ~ label .hamburguer {
-    transform: rotate(45deg);
-  }
-
-  input:checked ~ label .hamburguer::before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-
-  input:checked ~ label .hamburguer::after {
-    transform: rotate(90deg);
-    top: 0;
-  }
   .container {
     margin: 0 auto;
     margin-top: 1rem;
@@ -758,46 +741,22 @@ section div:hover ~ .mobi-data {
 }
 
 @media (max-width: 415px) {
-  .menu {
-    background-color: #2f2e2e;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 20px;
-    right: 19px;
-    cursor: pointer;
-    box-shadow: 0 0 0 0 #2f2e2e, 0 0 0 0 #2f2e2e;
-    transition: box-shadow 1s ease-in-out;
-  }
-
-  .menu:hover {
-    box-shadow: 0 0 0 8px #2f2e2e, 0 0 0 8px #2f2e2e;
-  }
-
-  #home .open-menu,
-  .close-menu {
-    opacity: 0;
-    visibility: hidden;
-  }
-
   .open-menu {
     opacity: 1;
     visibility: visible;
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 50px;
+    right: 30px;
 
     background-color: #2f2e2e;
     border: none;
-    border-radius: 10px;
 
     z-index: 1;
   }
 
   .close-menu {
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 15px;
     right: 15px;
@@ -826,14 +785,12 @@ section div:hover ~ .mobi-data {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
+
     background-color: #2f2e2e;
 
     width: 100vw;
     height: 100vh;
-
-    position: fixed;
-    top: 0;
-    left: 0;
   } */
 
   .navbar-container ul {
