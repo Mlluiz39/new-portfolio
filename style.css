@@ -819,7 +819,7 @@ section div:hover ~ .mobi-data {
     visibility: hidden;
   }
 
-  .navbar-container {
+  /* .navbar-container {
     display: flex;
     flex-direction: column;
 
@@ -834,7 +834,7 @@ section div:hover ~ .mobi-data {
     position: fixed;
     top: 0;
     left: 0;
-  }
+  } */
 
   .navbar-container ul {
     display: flex;
