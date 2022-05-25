@@ -42,18 +42,21 @@ body {
   padding: 1rem;
 }
 
-.navbar {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 179px;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
 }
 
-.navbar ul li {
+nav ul li {
   margin: 0 15px;
   list-style: none;
   font-size: 1rem;
@@ -61,12 +64,12 @@ body {
   line-height: 21px;
 }
 
-.navbar ul li a {
+nav ul li a {
   color: #c4c4c4;
   text-decoration: none;
 }
 
-.navbar-container .nav-port {
+.navbar-container  {
   margin-left: 180px;
   font-size: 24px;
   font-weight: 500;
@@ -75,11 +78,6 @@ body {
   text-decoration: none;
 }
 
-.close-menu,
-.open-menu {
-  opacity: 0;
-  visibility: hidden;
-}
 
 #img-port {
   margin-top: 60px;
@@ -87,6 +85,9 @@ body {
 }
 
 .nav-port {
+  margin: 0 0 10px 30px;
+  text-decoration: none;
+  font-size: 36px;
   color: #69adec;
 }
 
@@ -741,69 +742,6 @@ section div:hover ~ .mobi-data {
 }
 
 @media (max-width: 415px) {
-  .open-menu {
-    opacity: 1;
-    visibility: visible;
-    position: fixed;
-    top: 50px;
-    right: 30px;
-
-    background-color: #2f2e2e;
-    border: none;
-
-    z-index: 1;
-  }
-
-  .close-menu {
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background-color: #2f2e2e;
-
-    border: none;
-  }
-
-  .close-menu path {
-    stroke: #fff;
-  }
-
-  .navbar {
-    margin: 0;
-  }
-
-  .nav-port {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  /* .navbar-container {
-    display: flex;
-    flex-direction: column;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-    background-color: #2f2e2e;
-
-    width: 100vw;
-    height: 100vh;
-  } */
-
-  .navbar-container ul {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    margin-bottom: 200px;
-  }
-
-  .navbar-container .navbar ul li a {
-    font-size: 30px;
-  }
-
   input {
     display: none;
   }
