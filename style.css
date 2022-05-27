@@ -69,7 +69,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-.navbar-container  {
+.navbar-container {
   margin-left: 180px;
   font-size: 24px;
   font-weight: 500;
@@ -77,7 +77,6 @@ nav ul li a {
   font-style: normal;
   text-decoration: none;
 }
-
 
 #img-port {
   margin-top: 60px;
@@ -748,7 +747,19 @@ section div:hover ~ .mobi-data {
 
   .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .content {
+    max-width: 375px;
     margin: 0 auto;
+  }
+
+  nav {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .introduction {
@@ -765,6 +776,10 @@ section div:hover ~ .mobi-data {
     max-width: 90%;
     margin: 0;
     padding: 0;
+  }
+
+  .personal-data-container {
+    margin-inline: auto;
   }
 
   .personal-data-container .biography {
@@ -838,9 +853,8 @@ section div:hover ~ .mobi-data {
 
   .footer-container {
     display: flex;
-    margin: 0 auto;
-    max-width: 100%;
     background-color: #121212;
+    max-width: 374px;
   }
 
   .project-footer {
