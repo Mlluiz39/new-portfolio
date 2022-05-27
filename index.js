@@ -2,6 +2,7 @@ const embrasilValue = document.querySelector('.embrasil-value')
 const moneyValue = document.querySelector('.money-value')
 const mobiValue = document.querySelector('.mobilegal-value')
 
+const ul = document.querySelector('nav ul')
 
 const moneyFunction = () => {
   const money = document.querySelector('.money-data')
@@ -22,6 +23,14 @@ const mobiFunction = () => {
   const borderColor = document.querySelector('.mobilegal-value h2')
   borderColor.classList.toggle('border-color-blue')
   mobilegal.classList.toggle('transform-active')
+}
+
+function openMenuFunction() {
+  if (ul.classList.contains('open')) {
+    ul.classList.remove('open')
+  } else {
+    ul.classList.add('open')
+  }
 }
 
 moneyValue.addEventListener('click', moneyFunction)

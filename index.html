@@ -19,8 +19,22 @@
         <header>
           <nav>
             <a class="nav-port" href="#">Portfólio</a>
+            <div class="button-menu">
+              <button type="button" type="button" data-js="open-navigation" class="open-menu" onclick="openMenuFunction()">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 20H30" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10 12H30" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18 28L30 28" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button type="button" data-js="close-navigation" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 10L10 30M10 10L30 30" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              </div>
 
-            <ul>
+            <ul class="open">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
@@ -35,8 +49,9 @@
               </li>
             </ul>
           </nav>
+          
 
-          <!-- <hr /> -->
+          <hr />
         </header>
         <main class="introduction" id="home">
           <img id="img-port" src="./assets/perfil.svg" alt="foto de perfil" />
@@ -48,7 +63,7 @@
               Front-end & back-end.
             </p>
             <div class="btn-social">
-              <button class="btn-social-link">
+              <button type="button" class="btn-social-link">
                 <img
                   class="img-social"
                   src="./assets/linkedin.svg"
@@ -62,7 +77,7 @@
                   LinkedIn</a
                 >
               </button>
-              <button class="btn-social-git">
+              <button type="button" class="btn-social-git">
                 <img
                   class="img-social"
                   src="./assets/Vector-git.svg"
@@ -100,7 +115,7 @@
                   Entre em contato comigo pelo meu email ou pelo meu LinkedIn.
                 </p>
                 <div class="btn-contact">
-                  <button class="btn-resume">
+                  <button type="button" class="btn-resume">
                     <img
                       class="img-social"
                       src="./assets/download-cloud.svg"
@@ -114,7 +129,7 @@
                       Currículo</a
                     >
                   </button>
-                  <button class="btn-email">
+                  <button type="button" class="btn-email">
                     <img
                       class="img-social"
                       src="./assets/mail.svg"
@@ -217,7 +232,7 @@
                   </p>
                   <span>HTML CSS</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
@@ -247,7 +262,7 @@
                   </p>
                   <span>HTML CSS</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
@@ -277,7 +292,7 @@
                   </p>
                   <span>HTML CSS JS</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
@@ -307,7 +322,7 @@
                   </p>
                   <span>HTML CSS JS</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
@@ -336,7 +351,7 @@
                   </p>
                   <span>HTML CSS JS</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
@@ -366,7 +381,7 @@
                   </p>
                   <span>HTML CSS JS REACT</span>
                 </div>
-                <button class="project-btn-link rounded">
+                <button type="button" class="project-btn-link rounded">
                   <img
                     class="img-social"
                     src="./assets/link.svg"
