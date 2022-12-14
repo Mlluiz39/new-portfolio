@@ -25,13 +25,27 @@ const mobiFunction = () => {
   mobilegal.classList.toggle('transform-active')
 }
 
-function openMenuFunction() {
+const openMenuFunction = () => {
   if (ul.classList.contains('open')) {
     ul.classList.remove('open')
   } else {
     ul.classList.add('open')
   }
 }
+
+const typeWriter = element => {
+  const textArray = element.innerHTML.split('')
+  element.innerHTML = ''
+  textArray.forEach((letter, i) => {
+    setTimeout(() => (element.innerHTML += letter), 100 * i)
+  })
+
+  setInterval(() => {
+    typeWriter(element)
+  }, 6000)
+}
+
+typeWriter(elementEl)
 
 moneyValue.addEventListener('click', moneyFunction)
 embrasilValue.addEventListener('click', embraFunction)
