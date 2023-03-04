@@ -538,6 +538,9 @@ section div:hover ~ .mobi-data {
 }
 
 .project-btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   margin-bottom: 90px;
   border-radius: 4px;
@@ -779,6 +782,9 @@ section div:hover ~ .mobi-data {
     margin-left: 15px;
   }
   .project-btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 15px;
   }
 
